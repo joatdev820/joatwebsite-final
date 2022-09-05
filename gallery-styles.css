@@ -26,7 +26,7 @@ flex-direction: column;
 .perm-image-section {
     height: 50vh;
     width: 100vw;
-    background-image: url(/images/work11.jpg);
+    background-image: url(images/work11.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
