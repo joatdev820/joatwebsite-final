@@ -251,7 +251,7 @@ header h1 {
 }
 
 .about-image {
-    background-image: url(/images/aboutcropped01.png);
+    background-image: url(images/aboutcropped01.png);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -264,23 +264,23 @@ header h1 {
 @keyframes slide_img {
 
     20% {
-        background-image: url(/images/aboutcropped01.png);
+        background-image: url(images/aboutcropped01.png);
     }
 
     40% {
-      background-image: url(/images/aboutcroppedimages/pictureframeprecrop.png);
+      background-image: url(images/aboutcroppedimages/pictureframeprecrop.png);
     }
     
     60% {
-      background-image: url(/images/aboutcroppedimages/aboutslidercropped02.png);
+      background-image: url(images/aboutcroppedimages/aboutslidercropped02.png);
     }
   
     80% {
-      background-image: url(/images/aboutcroppedimages/aboutimage2precrop.png);
+      background-image: url(images/aboutcroppedimages/aboutimage2precrop.png);
     }
   
    100% {
-    background-image: url(/images/aboutcroppedimages/aboutporch4precrop.png);
+    background-image: url(images/aboutcroppedimages/aboutporch4precrop.png);
    }
 }
 
@@ -303,7 +303,7 @@ header h1 {
 .page-break-black {
 
     height: 70vh;
-    background-image: url(/images/blackbackgroundwithtool.png);
+    background-image: url(images/blackbackgroundwithtool.png);
     
     background-position: bottom;
     background-size: 100%;
@@ -405,7 +405,7 @@ header h1 {
 .page-break-white {
     position: relative;
     height: 70vh;
-    background-image: url(/images/TapeMeasurebgUpdate.png);
+    background-image: url(images/TapeMeasurebgUpdate.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -463,7 +463,7 @@ header h1 {
 }
 
 .why-us-image {
-    background-image: url(/images/estimate-pane.png);
+    background-image: url(images/estimate-pane.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -507,7 +507,7 @@ header h1 {
     height: 350px;
     box-shadow: 0 5px 12px 4px darkgray;
 
-    background-image: url(/images/10-years-left-final.png);
+    background-image: url(images/10-years-left-final.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -518,11 +518,11 @@ header h1 {
 
 .side-badge-2 {
 
-    background-image: url(/images/24-hour-final-middle.png);
+    background-image: url(images/24-hour-final-middle.png);
 }
 
 .side-badge-3 {
-    background-image: url(/images/since-2021-righ-final.png);
+    background-image: url(images/since-2021-righ-final.png);
 }
 
 /*--------------------------------------Book Button--------------------------------------------------*/
@@ -594,7 +594,7 @@ header h1 {
 
 .testimonial-section-container {
     height: 100vh;
-    background-image: url(/images/whitebackgroundbottomcorrect.png);
+    background-image: url(images/whitebackgroundbottomcorrect.png);
     background-position: top;
     background-size: cover;
 
@@ -806,7 +806,7 @@ footer {
     
     .about-image {
         background-color: black;
-       background-image: url(/images/aboutcropped01.png); 
+       background-image: url(images/aboutcropped01.png); 
         background-position: center;
         background-size:cover;
         background-repeat: no-repeat;
@@ -829,7 +829,7 @@ footer {
     .page-break-black {
 
         height: 19vh;
-        background-image: url(/images/blackbackgroundwithtool.png);
+        background-image: url(images/blackbackgroundwithtool.png);
         
         background-position: bottom;
         background-size: 100%;
@@ -889,7 +889,7 @@ footer {
     .service-mobile-image {
         height: 30vh;
         width: 100vw;
-        background-image: url(/images/work6.jpg);
+        background-image: url(images/work6.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1003,7 +1003,7 @@ footer {
     
     .about-image {
         background-color: black;
-       background-image: url(/images/aboutcropped01.png); 
+       background-image: url(images/aboutcropped01.png); 
         background-position: center;
         background-size:cover;
         background-repeat: no-repeat;
@@ -1026,7 +1026,7 @@ footer {
     .page-break-black {
 
         height: 19vh;
-        background-image: url(/images/blackbackgroundwithtool.png);
+        background-image: url(images/blackbackgroundwithtool.png);
         
         background-position: bottom;
         background-size: 100%;
@@ -1131,7 +1131,7 @@ footer {
     align-items: center;
     height: 100vh;
 
-    background-image: url(/images/TapeMeasurebgUpdate.png);
+    background-image: url(images/TapeMeasurebgUpdate.png);
     background-position:-125px 150px;
     background-color: black;
     background-size: cover;
@@ -1333,7 +1333,7 @@ footer {
         
         .about-image {
             background-color: black;
-           background-image: url(/images/aboutcropped01.png); 
+           background-image: url(images/aboutcropped01.png); 
             background-position: center;
             background-size:cover;
             background-repeat: no-repeat;
@@ -1356,7 +1356,7 @@ footer {
         .page-break-black {
     
             height: 19vh;
-            background-image: url(/images/blackbackgroundwithtool.png);
+            background-image: url(images/blackbackgroundwithtool.png);
             
             background-position: bottom;
             background-size: 100%;
@@ -1464,7 +1464,7 @@ footer {
         
         .about-image {
             background-color: black;
-           background-image: url(/images/aboutcropped01.png); 
+           background-image: url(images/aboutcropped01.png); 
             background-position: center;
             background-size:cover;
             background-repeat: no-repeat;
@@ -1487,7 +1487,7 @@ footer {
         .page-break-black {
     
             height: 19vh;
-            background-image: url(/images/blackbackgroundwithtool.png);
+            background-image: url(images/blackbackgroundwithtool.png);
             
             background-position: bottom;
             background-size: 100%;
@@ -1593,7 +1593,7 @@ footer {
         align-items: center;
         height: 100vh;
     
-        background-image: url(/images/TapeMeasurebgUpdate.png);
+        background-image: url(images/TapeMeasurebgUpdate.png);
         background-position:-125px 150px;
         background-color: black;
         background-size: cover;
