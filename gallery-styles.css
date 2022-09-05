@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+display: flex;
+flex-direction: column;
+}
+
+.gallery-header {
+    display: flex;
+    height: 20vh;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+}
+
+.gallery-header h1 {
+    font-size: 3em;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.perm-image-section {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(/images/work11.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10%;
+}
+
+.gallery-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,1660 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: rgb(0, 0, 0) yellow;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+/* --------------Global Styles ---------------- */
+
+.hide {
+    display: none;
+}
+
+.flex-across {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-font {
+    font-family: 'Cutive', serif;
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.main-heading-font {
+    font-family: 'Cutive', serif;
+    font-size: 4.1em;
+    font-weight: bold;
+}
+
+.main-title-style {
+    font-family: 'Cutive', serif;
+}
+
+.button-styles {
+    background-color: yellow;
+    padding: 20px 20px;
+    border-radius: 2px;
+    margin-top: 15px;
+    color: Black;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-style: none;
+
+}
+
+.container-styles {
+    border-radius: 5px;
+    box-shadow: 0 5px 12px 4px grey;
+}
+
+.white {
+    color: white;
+}
+
+.black-background{
+    background-color: black;
+    z-index: -3;
+}
+
+/* ------------ End Globals ------------------------*/
+
+/* ------------ Header/Nav-Bar ----------------------------*/
+
+header{
+    
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    height: 80%;
+    border-radius: 2px;
+}
+
+header h1 {
+    color: yellow;
+    font-size: 1em;
+}
+
+
+
+.nav-bar {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.nav-button {
+    background-color: yellow;
+    padding: 2% 3%;
+    border-radius: 2px;
+    color: black;
+    margin-left: 3%;
+    cursor: pointer;
+    transition: 2000ms;
+
+}
+
+.nav-button:hover {
+    background-color: green;
+}
+
+.nav-button a{
+    color: black;
+    font: bold;
+    
+    
+}
+
+.menu-icon {
+    display: none;
+}
+
+#phone-link-for-mobile {
+    display:none;
+}
+
+/*-------------------Mobile Menu (Only viewable on phones)---------------------*/
+
+.mobile-menu {
+    display: none;
+}
+
+
+/*----------------Hero (Main Banner Section)----------*/
+
+.hero-container {
+    height: 90vh;
+}
+
+.hero-content {
+    position: relative;
+    justify-content: space-between;
+    height: 95%;
+    width: 98%;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px 4px grey;
+    overflow: hidden;
+}
+
+.hero-content video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    border: yellow 3px solid;
+    border-radius: 5px;
+}
+
+.hero-text {
+    margin: 0 auto;
+    width: 50%;
+    color: whitesmoke;
+    z-index: 1;   
+}
+
+.family-image {
+    position: relative;
+    z-index: -1;
+    min-width: 35%;
+}
+
+
+
+/*------------------Contact Linked Form (Homepage)-------------------------*/
+
+.contact-background {
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.534);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 4;
+}
+
+
+/*--------------------About Section ------------------ */
+#about-section-redirect {
+    height: 20vh;
+}
+
+.about-content{
+    
+    height: 50vh;
+    justify-content: space-evenly;
+}
+
+.about-content-card {
+    width: 40%;
+    height: 100%;
+}
+
+.about-image {
+    background-image: url(/images/aboutcropped01.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+
+    /* background-image responsive */
+    animation: slide_img 30s infinite;
+}
+
+@keyframes slide_img {
+
+    20% {
+        background-image: url(/images/aboutcropped01.png);
+    }
+
+    40% {
+      background-image: url(/images/aboutcroppedimages/pictureframeprecrop.png);
+    }
+    
+    60% {
+      background-image: url(/images/aboutcroppedimages/aboutslidercropped02.png);
+    }
+  
+    80% {
+      background-image: url(/images/aboutcroppedimages/aboutimage2precrop.png);
+    }
+  
+   100% {
+    background-image: url(/images/aboutcroppedimages/aboutporch4precrop.png);
+   }
+}
+
+.about-text {
+    justify-content:space-evenly;
+    align-items: flex-start;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.about-text h1 {
+    font-size: 1.9rem;
+}
+
+
+/*------------------------*/
+
+
+
+.page-break-black {
+
+    height: 70vh;
+    background-image: url(/images/blackbackgroundwithtool.png);
+    
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+/*--------------Services Section-------------------------*/
+
+.services-section {
+    padding: 0 10%;
+    background-color: black;
+     height: 90vh;
+     justify-content: space-between;
+     color: #f4f4f4;
+     z-index: 1;
+    
+}
+
+.services-section h1 {
+    margin: 50px 0 20px;
+}
+
+.services-section p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: yellow;
+
+}
+
+
+.service-image-panes{
+
+    width: 85vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    /*border: 3px solid yellow; */
+    box-shadow: 0 3px 30px 2px rgba(211, 211, 211, 0.452);
+    border-radius: 2px;
+    margin-bottom: 40px;
+    
+}
+
+
+
+.service-image {
+    max-width: 100%;
+    object-fit:fill;
+    object-position: center center;
+    
+}
+
+.service-bullets{
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.service-list li {
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+
+
+.mobile-service-section {
+    display: none;
+}
+
+/*------------------------------Gallery-Link---------------------------------------------*/
+
+.gallery-link {
+    height: 10vh;
+    background-color: black;
+}
+
+.gallery-link a {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+
+/*------Page Break is a section created to Add Graphic ---*/
+
+.page-break-white {
+    position: relative;
+    height: 70vh;
+    background-image: url(/images/TapeMeasurebgUpdate.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.invisible-buttons-container {
+    position: relative;
+    height: 30vh;
+    width: 50%;
+    color: black;
+}
+
+
+
+.flyer-image {
+ width: 50%;
+ justify-content: flex-end;
+}
+
+.flyer-image img {
+    max-width: 425px;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px -3px grey;
+    margin-right: 100px;
+    cursor: pointer;
+    
+}
+
+.clickable-div {
+    margin-left: 80px;
+    width: 20vw;
+    height: 30vh;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.book-with-joat-mobile {
+    display: none;
+}
+
+
+
+/*--------------------------------------Why Us? Section--------------------------------*/
+
+.why-us-section{
+    justify-content: space-evenly;
+    height: 70vh;
+}
+
+.why-us-content-card{
+    height: 50vh;
+    width: 40vw;
+    border-radius: 5px;
+}
+
+.why-us-image {
+    background-image: url(/images/estimate-pane.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.why-us-text {
+    justify-content:space-evenly;
+    align-items: flex-start;
+    font-size: 1.3em;
+    text-align: left;
+    cursor:default;
+}
+
+.why-us-text h1 {
+    font-size: 1.9rem;
+    margin-bottom: 10%;
+}
+
+.why-us-text ul li {
+    margin-left:30px;
+    list-style:square;
+    margin-bottom: 5%;
+}
+
+
+/*-------------------------------Flyer Section -----------------------------*/
+
+.flyer-section {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+
+
+}
+
+.side-badge {
+    width:350px;
+    height: 350px;
+    box-shadow: 0 5px 12px 4px darkgray;
+
+    background-image: url(/images/10-years-left-final.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 3px yellow solid;
+
+}
+
+.side-badge-2 {
+
+    background-image: url(/images/24-hour-final-middle.png);
+}
+
+.side-badge-3 {
+    background-image: url(/images/since-2021-righ-final.png);
+}
+
+/*--------------------------------------Book Button--------------------------------------------------*/
+
+
+.book-button-section {
+    height: 40vh;
+    color: white;
+    margin-bottom: 10vh;
+    
+    
+}
+
+.book-button-container {
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 40%;
+    width: 90vw;
+    background-color: black;
+    
+}
+
+.book-button-container h3 {
+    font-size: 1.7em;
+    margin-left: 5%;
+}
+
+.book-button-container button {
+    margin-right: 60px;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+    border-style: none;
+    color: black;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: yellow;
+    font-size: .8em;
+    box-shadow: 0 1px 12px 1px darkgray;
+}
+
+.book-button-container:hover button {
+    cursor: pointer;
+}
+
+/*---------------------------------------Map-Section----------------------------------------------------*/
+
+.maps-section {
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.maps-section h1 {
+    margin-bottom: 5vh;
+}
+
+.maps-section p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.google-map {
+    box-shadow: 0 5px 12px 4px grey;
+}
+
+/*---------------------------------------Reviews----------------------------------------------------*/
+
+.testimonial-section-container {
+    height: 100vh;
+    background-image: url(/images/whitebackgroundbottomcorrect.png);
+    background-position: top;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+}
+
+
+.testimonial-section-container h1{
+
+    color: black;
+}
+
+.testimonial-section-container p {
+    color: black;
+}
+.image-slider {
+
+    height: 50vh;
+    margin: 0 auto 5;
+    position: relative;
+    width: 95vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(400px*11);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+ 0% {
+     transform: translateX(0);
+ }
+ 100% {
+     transform: translateX(calc(-400px*6.5));
+ }
+}
+
+.slide {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    perspective: 200px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+
+.slide img:hover {
+    transform: translateZ(20px);
+}
+
+/*------------------------------------Footer--------------------------------------------*/
+
+.footer-main-content {
+    background-color: black;
+    color: white;
+}
+.footer-lists {
+    width: 90vh;
+    height: 30vh;
+    justify-content: space-evenly;
+}
+
+/*------------------------------Copyright Attribution-------------instagram------------------------*/
+
+
+footer {
+    height: 5vh;
+    box-shadow: 0 5px 15px 5px lightgrey;
+}
+
+/*------------------------------Media Queries-------------------------------------------*/
+
+@media (max-width: 480.98px) /*Small devices (landscape phones, less than 768px)*/ { 
+
+    /*-------------------------New Globals --------------------- */
+    .title-font {
+        font-size: 3em;
+        font-weight: bolder;
+        
+    }
+    
+    .main-heading-font {
+        font-size: 1.5em;
+    }
+
+    /*-----------------------Nav Bar -----------------------------------*/
+
+    header{
+        height: 8vh;
+        width: 100vw;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    
+    
+    
+    header h1 {
+        display: none;
+        color: yellow;
+        font-size: 1em;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .menu-icon img {
+        background-color: black;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    
+    #phone-link-for-mobile {
+        display: inline;
+        color: white;
+        font-weight: bold;
+    }
+
+    /*-----------------Hero ----------------*/
+   
+    
+    .hero-content {
+        width: 95%;
+        align-items: flex-start;
+    }
+    
+
+    
+    .hero-text {
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .hero-text p {
+
+        margin-top: 10%;
+        margin-bottom: 20%;
+          
+    }
+
+    .hero-text a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    .hero-text button {
+
+        margin-top: 30%;
+    }
+    
+    .family-image {
+        position: absolute;
+        z-index: -1;
+        max-width: 110%;
+        bottom: -100px;
+    }
+
+    /*---------------------About Section-------------*/
+
+    .about-content{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about-content-card {
+        width: 90%;
+        height: 50%;
+    }
+    
+    .about-image {
+        background-color: black;
+       background-image: url(/images/aboutcropped01.png); 
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+    
+    .about-text {
+        justify-content:space-evenly;
+        align-items: flex-start;
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .about-text h1 {
+        font-size: 1.9rem;
+    }
+
+    /*--------------------Page-Break (white and black background with wrench------------------------*/
+
+    .page-break-black {
+
+        height: 19vh;
+        background-image: url(/images/blackbackgroundwithtool.png);
+        
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+    }
+
+    /*------------------------------Gallery Link------------------------------------*/
+    .gallery-link {
+        display: none;
+    }
+
+    /*---------------------------------Services------------------------------------*/
+
+    .services-section {
+        display: none;
+    }
+    .service-image-panes{
+
+        display: none;
+        
+    }
+
+    .service-bullets{
+        display: none;
+    }
+
+    .mobile-service-section {
+        display: flex;
+        height: auto;
+        background-color: black;
+        color: white;
+    }
+
+    .mobile-service-section h1 {
+        font-size: 2em;
+        margin-top: 200px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-service-section p {
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        color: yellow;
+        margin-bottom: 30px;
+    }
+
+    .mobile-service-section h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+
+
+    .service-mobile-image {
+        height: 30vh;
+        width: 100vw;
+        background-image: url(/images/work6.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .services-mobile-bulletpoints {
+        height: 60vh;
+        margin: 10%;
+        justify-content: flex-start;
+    }
+        
+        .title-font {
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    
+    .main-heading-font {
+        font-size: 1.5em;
+    }
+
+    /*-----------------------Nav Bar -----------------------------------*/
+
+    header{
+        background-color: rgb(0, 0, 0);
+        height: 8vh;
+        width: 100vw;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .menu-icon {
+        display: inline;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .menu-icon img {
+        background-color: black;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    
+    #phone-link-for-mobile {
+        display: inline;
+        color: white;
+        font-weight: bold;
+    }
+
+    /*-----------------Hero ----------------*/
+   
+    
+    .hero-content {
+        width: 95%;
+        align-items: flex-start;
+    }
+    
+
+    
+    .hero-text {
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .hero-text p {
+
+        margin-top: 10%;
+        margin-bottom: 20%;
+          
+    }
+
+    .hero-text a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    .hero-text button {
+
+        margin-top: 30%;
+    }
+    
+    .family-image {
+        position: absolute;
+        z-index: -1;
+        max-width: 110%;
+        bottom: -100px;
+    }
+
+    /*---------------------About Section-------------*/
+
+    .about-content{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about-content-card {
+        width: 90%;
+        height: 50%;
+    }
+    
+    .about-image {
+        background-color: black;
+       background-image: url(/images/aboutcropped01.png); 
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+    
+    .about-text {
+        justify-content:space-evenly;
+        align-items: flex-start;
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .about-text h1 {
+        font-size: 1.9rem;
+    }
+
+    /*--------------------Page-Break (white and black background with wrench------------------------*/
+
+    .page-break-black {
+
+        height: 19vh;
+        background-image: url(/images/blackbackgroundwithtool.png);
+        
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+    }
+
+    /*--------------------------------------Why Us? Section--------------------------------*/
+
+.why-us-section{
+    flex-direction: column;
+}
+
+.why-us-content-card{
+    width: 80vw;
+}
+
+.why-us-image {
+    display: none;
+    
+}
+
+.why-us-text {
+    justify-content:space-evenly;
+    align-items: flex-start;
+    font-size: 1em;
+    text-align: center;
+    cursor:default;
+}
+
+.why-us-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+.why-us-text ul li {
+    margin-top: 5%;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+/*-------------------------------Flyer Section -----------------------------*/
+
+.flyer-section {
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+
+
+}
+
+.side-badge {
+    margin-bottom: 40px;
+
+}
+
+/*--------------------------------------Book Button--------------------------------------------------*/
+
+
+.book-button-section {
+    height: 90vh;
+    color: white;
+    margin-bottom: 10vh;
+    
+    
+}
+
+.book-button-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    width: 90vw;
+    
+}
+
+.book-button-container h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.book-button-container button {
+    margin-right: 0;
+    border-radius: 5px;
+    padding: 4vh 8vw;
+}
+
+.book-button-container:hover button {
+    cursor: pointer;
+}
+
+/*-------------------------Mobile Page-Break Replacing invisible divs--------------------------------------------------------------*/
+
+.page-break-white{
+    display: none;
+
+}
+
+.book-with-joat-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url(/images/TapeMeasurebgUpdate.png);
+    background-position:-125px 150px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: ;
+}
+
+.book-with-joat-mobile img {
+    height: 270px;
+    width: 90%;
+    border-radius: 7px;
+    box-shadow: 0 5px 12px -3px grey;
+}
+
+
+
+
+/*------------------------Mobile menu - only seen on small screens-----------------------------*/
+
+.mobile-menu {
+    display: none;
+    position: sticky;
+    flex-direction: column;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    z-index: 1000;
+
+    justify-content: flex-start;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+.mobile-menu li {
+    list-style: none;
+    font-size: 2em;
+}
+
+#close-menu  a{
+    color: red;
+    font-size: 1.5em;
+}
+
+ /*-----------------------------------------------------------------------*/
+}
+
+@media (max-width: 768px){
+    .title-font {
+        font-size: 2.5em;
+    }
+
+    #phone-link-for-mobile {
+        font-size: 2em;
+    }
+
+    /*-----------------------------------------------------------------------*/
+
+
+    .service-bullets{
+        display: none;
+    }
+
+    .mobile-service-section {
+        display: flex;
+        height: auto;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    .mobile-service-section h1 {
+        display: none;
+    }
+
+    .mobile-service-section p {
+       display: none;
+    }
+
+    .mobile-service-section h3 {
+        font-size: 1.8em;
+        margin-top: 10px;
+        text-transform: uppercase;
+        width: 100vw;
+        text-align: center;
+    }
+
+
+    .services-mobile-bulletpoints {
+        height: 60vh;
+        margin: 10%;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width:820px){
+    .book-with-joat-mobile img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        max-width: 60%;
+    }
+
+    header{
+        height: 8vh;
+        width: 100vw;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    
+    
+    
+    header h1 {
+        display: none;
+        color: yellow;
+        font-size: 1em;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .menu-icon img {
+        background-color: black;
+        padding: 3px;
+        border-radius: 2px;
+    }
+    
+    #phone-link-for-mobile {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 991.98px) /* Medium devices tablets, less than 992px*/ {
+
+    
+        /*-----------------------Nav Bar -----------------------------------*/
+        
+        .nav-bar {
+            display: none;
+        }
+    
+        .menu-icon {
+            display: inline;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+    
+        .menu-icon img {
+            background-color: black;
+            padding: 3px;
+            border-radius: 2px;
+        }
+        
+        #phone-link-for-mobile {
+            display: inline;
+            color: white;
+            font-weight: bold;
+        }
+    
+        /*---------------------About Section-------------*/
+    
+        .about-content{
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-content-card {
+            width: 70%;
+            height: 50%;
+        }
+        
+        .about-image {
+            background-color: black;
+           background-image: url(/images/aboutcropped01.png); 
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+        }
+        
+        .about-text {
+            justify-content:space-evenly;
+            align-items: flex-start;
+            font-size: 1em;
+            text-align: left;
+        }
+        
+        .about-text h1 {
+            font-size: 1.9rem;
+        }
+    
+        /*--------------------Page-Break (white and black background with wrench------------------------*/
+    
+        .page-break-black {
+    
+            height: 19vh;
+            background-image: url(/images/blackbackgroundwithtool.png);
+            
+            background-position: bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        
+        }
+    
+        /*------------------------------Gallery Link------------------------------------*/
+        .gallery-link {
+            display: none;
+        }
+    
+        /*---------------------------------Services------------------------------------*/
+    
+
+    
+        /*-----------------------Nav Bar -----------------------------------*/
+    
+        header{
+            background-color: rgb(0, 0, 0);
+            height: 8vh;
+            width: 100vw;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+    
+        .menu-icon {
+            display: inline;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    
+        .menu-icon:hover {
+            cursor: pointer;
+        }
+    
+        .menu-icon img {
+            background-color: black;
+            padding: 3px;
+            border-radius: 2px;
+        }
+        
+        #phone-link-for-mobile {
+            display: inline;
+            color: white;
+            font-weight: bold;
+        }
+    
+        /*-----------------Hero ----------------*/
+       
+        
+        .hero-content {
+            width: 85%;
+
+        }
+        
+        .hero-text {
+            margin-top: 100px;
+            width: 100%;
+            text-align: center;  
+        }
+    
+        .hero-text p {
+    
+            margin-top: 10%;
+            margin-bottom: 20%;
+              
+        }
+    
+        .hero-text a {
+    
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            font-weight: 900;
+        }
+    
+        .hero-text button {
+    
+            margin-top: 30%;
+        }
+        
+        .family-image {
+            position: absolute;
+            z-index: -1;
+            max-width: 110%;
+            bottom: -100px;
+        }
+    
+        /*---------------------About Section-------------*/
+    
+        .about-content{
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-content-card {
+            width: 90%;
+            height: 50%;
+        }
+        
+        .about-image {
+            background-color: black;
+           background-image: url(/images/aboutcropped01.png); 
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+        }
+        
+        .about-text {
+            justify-content:space-evenly;
+            align-items: flex-start;
+            font-size: 1em;
+            text-align: left;
+        }
+        
+        .about-text h1 {
+            font-size: 1.9rem;
+        }
+    
+        /*--------------------Page-Break (white and black background with wrench------------------------*/
+    
+        .page-break-black {
+    
+            height: 19vh;
+            background-image: url(/images/blackbackgroundwithtool.png);
+            
+            background-position: bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            z-index: 50;
+        
+        }
+    
+        /*--------------------------------------Why Us? Section--------------------------------*/
+    
+    .why-us-section{
+        flex-direction: column;
+    }
+    
+    .why-us-content-card{
+        width: 80vw;
+    }
+    
+    .why-us-image {
+        display: none;
+        
+    }
+    
+    .why-us-text {
+        justify-content:space-evenly;
+        align-items: flex-start;
+        font-size: 1em;
+        text-align: center;
+        cursor:default;
+    }
+    
+    .why-us-text h1 {
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+    
+    .why-us-text ul li {
+        margin-top: 5%;
+        font-size: 1.1em;
+        text-align: left;
+    }
+    
+    /*-------------------------------Flyer Section -----------------------------*/
+    
+    .flyer-section {
+        flex-direction: column;
+        margin-top: 50px;
+        height: auto;
+    
+    
+    }
+    
+    .side-badge {
+        margin-bottom: 40px;
+    
+    }
+    
+    /*--------------------------------------Book Button--------------------------------------------------*/
+    
+    
+    .book-button-section {
+        height: 90vh;
+        color: white;
+        margin-bottom: 10vh;
+        
+        
+    }
+    
+    .book-button-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 75%;
+        width: 90vw;
+        
+    }
+    
+    .book-button-container h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .book-button-container button {
+        margin-right: 0;
+        border-radius: 5px;
+        padding: 4vh 8vw;
+    }
+    
+    .book-button-container:hover button {
+        cursor: pointer;
+    }
+    
+    /*-------------------------Mobile Page-Break Replacing invisible divs--------------------------------------------------------------*/
+    
+    .page-break-white{
+        display: none;
+    
+    }
+    
+    .book-with-joat-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    
+        background-image: url(/images/TapeMeasurebgUpdate.png);
+        background-position:-125px 150px;
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: ;
+    }
+    
+    .book-with-joat-mobile img {
+        height: 270px;
+        width: 90%;
+        border-radius: 7px;
+        box-shadow: 0 5px 12px -3px grey;
+    }
+    
+    
+    
+    
+    /*------------------------Mobile menu - only seen on small screens-----------------------------*/
+    
+    .mobile-menu {
+        display: none;
+        position: sticky;
+        flex-direction: column;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.877);
+        color: white;
+        z-index: 1000;
+    
+        justify-content: flex-start;
+    }
+    
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1000;
+    }
+    
+    .mobile-menu li {
+        list-style: none;
+        font-size: 2em;
+    }
+    
+    #close-menu  a{
+        color: red;
+        font-size: 1.5em;
+    }
+    
+     /*-----------------------------------------------------------------------*/
+    }
+
+
+@media (max-width: 1199.98px) /* Large devices (desktops, less than 1200px)*/ { 
+
+}
+
+
+    
+
