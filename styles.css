@@ -696,6 +696,9 @@ footer {
         font-size: 3em;
         font-weight: bolder;
     
+    .mobile-titles {
+        font-size: 2em;
+    }
         
     }
     
