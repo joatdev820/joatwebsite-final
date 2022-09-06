@@ -695,12 +695,12 @@ footer {
     .title-font {
         font-size: 3em;
         font-weight: bolder;
-    
+    }
     .mobile-titles {
         font-size: 2em;
     }
         
-    }
+    
     
     .main-heading-font {
         font-size: 1.5em;
@@ -1140,7 +1140,6 @@ footer {
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: ;
 }
 
 .book-with-joat-mobile img {
@@ -1602,7 +1601,7 @@ footer {
         background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
-        z-index: ;
+        
     }
     
     .book-with-joat-mobile img {
