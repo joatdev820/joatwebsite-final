@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scrollbar-color: rgb(0, 0, 0) yellow;
     scrollbar-width: thin;
+    overflow-x: hidden;
     
 }
 
