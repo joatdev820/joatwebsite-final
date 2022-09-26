@@ -694,7 +694,7 @@ footer {
     /*-------------------------New Globals --------------------- */
     .mobile-titles {
         font-size: 2em;
-        font-weight: 600;
+        
     }
         
     
@@ -752,7 +752,7 @@ footer {
    
     
     .hero-content {
-        width: 98%;
+        width: 95%;
         align-items: flex-start;
     }
     
