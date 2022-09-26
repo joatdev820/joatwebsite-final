@@ -264,6 +264,10 @@ header h1 {
 
 @keyframes slide_img {
 
+    0%{
+        background-image: url(images/aboutcropped01.png);
+    }
+
     20% {
         background-image: url(images/aboutcropped01.png);
     }
