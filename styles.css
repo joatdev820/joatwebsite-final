@@ -691,6 +691,10 @@ footer {
 
 @media (max-width: 480.98px) /*Small devices (landscape phones, less than 768px)*/ { 
 
+    body{
+     width:100vw; 
+     overflow-x: hidden;
+    }
     /*-------------------------New Globals --------------------- */
     .mobile-titles {
         font-size: 2em;
@@ -749,8 +753,9 @@ footer {
     }
 
     /*-----------------Hero ----------------*/
-   
-    
+
+
+
     .hero-content {
         width: 95%;
         align-items: flex-start;
@@ -762,6 +767,11 @@ footer {
         margin-top: 100px;
         width: 100%;
         text-align: center;  
+    }
+
+    #main-page-title {
+        font-size: 2.5em;
+        font-weight: bolder;
     }
 
     .hero-text p {
