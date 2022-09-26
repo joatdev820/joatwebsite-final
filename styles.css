@@ -691,6 +691,7 @@ footer {
 
 @media (max-width: 480.98px) /*Small devices (landscape phones, less than 768px)*/ { 
 
+
     body{
      width:100vw; 
      overflow-x: hidden;
