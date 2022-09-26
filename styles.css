@@ -751,7 +751,9 @@ footer {
 
     /*-----------------Hero ----------------*/
 
-
+    .hero-container{
+        overflow-x: hidden;
+    }
 
     .hero-content {
         width: 95%;
