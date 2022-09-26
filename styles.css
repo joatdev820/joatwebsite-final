@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scrollbar-color: rgb(0, 0, 0) yellow;
     scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 body {
@@ -691,10 +692,6 @@ footer {
 
 @media (max-width: 480.98px) /*Small devices (landscape phones, less than 768px)*/ { 
 
-
-    html, body{
-     overflow-x: hidden;
-    }
     /*-------------------------New Globals --------------------- */
     .mobile-titles {
         font-size: 2em;
