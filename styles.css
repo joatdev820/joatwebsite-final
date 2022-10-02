@@ -170,6 +170,7 @@ header h1 {
 
 .hero-container {
     height: 90vh;
+    overflow-y:hidden;
 }
 
 .hero-content {
