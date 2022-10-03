@@ -1862,6 +1862,7 @@ footer {
 
     header {
         height: 12vh;
+        width: 100%;
     }
 
     .hero-container {
