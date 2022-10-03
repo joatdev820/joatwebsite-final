@@ -1673,7 +1673,7 @@ footer {
 
 }
 
-*-------------------Phone landscape orientation-------------*/
+/*-------------------Phone landscape orientation-------------*/
 
 @media only screen and (min-width: 620px) and (max-width: 950px) and (min-height: 250px) and (max-height: 450px) and (orientation: landscape) { 
     
