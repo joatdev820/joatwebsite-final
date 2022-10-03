@@ -1674,8 +1674,159 @@ footer {
 }
 
 /*-------------------Phone landscape orientation-------------*/
+*-------------------Phone landscape orientation-------------*/
 
 @media only screen and (min-width: 620px) and (max-width: 950px) and (min-height: 250px) and (max-height: 450px) and (orientation: landscape) { 
+    
+    #mobile-menu {
+        justify-content:center;
+        align-items: flex-start;
+    }
+
+    #about-button {
+        display: none;
+    }
+
+    #mobile-menu li {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    mobile-titles {
+        font-size: 2em;
+        
+    }
+
+    #mobile-review-font {
+        font-size: 2.5em;
+    }
+    
+    #home-grown-mobile-font {
+        font-size: 2.5em;
+    }
+    
+    
+    .main-heading-font {
+        font-size: 1.5em;
+    }
+
+    header {
+        height: 12vh;
+    }
+
+    .hero-container {
+        width: 100%;
+     
+    }
+
+    .hero-text {
+        font-size: 1em;
+    }
+
+    .hero-content {
+        height: 90%;
+        width: 95%;
+        margin-bottom: 0;
+
+    }
+    
+    .hero-text {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .hero-text h1 {
+        margin-top: 10%;
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+    .hero-text p {
+
+        margin-top: 2%;
+        margin-bottom: 2%;
+          
+    }
+
+    .hero-text a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .hero-text button {
+        margin-top: 2%;
+        padding: 1% 2%;
+    }
+    
+    .family-image {
+        position: absolute;
+        z-index: -1;
+        max-width: 45%;
+        bottom: -100px;
+
+}
+
+   .about-content {
+    display: none;
+   }
+
+
+   .page-break-black {
+    display: none;
+   }
+
+   .services-section {
+    display: none;
+   }
+
+   .services-mobile-bulletpoints{
+    display: none;
+   }
+
+  
+   .gallery-link {
+    display: none;
+   }
+
+   .page-break-white{
+    display: none;
+   }
+
+
+   .book-with-joat-mobile{
+    display: none;
+   }
+
+   .why-us-section {
+    display: none;
+   }
+
+   .flyer-section {
+    display: none;
+   }
+
+   .maps-section {
+    display: none;
+   }
+
+   .testimonial-section-container {
+    display: none;
+   }
+
+   .footer-main-content {
+    display: none;
+   }
+
+
+}
+    
+
+
+@media (min-width: 620px) and (max-width: 950px) and (min-height: 250px) and (max-height: 450px) and (orientation: landscape) { 
     
     #mobile-menu {
         justify-content:center;
